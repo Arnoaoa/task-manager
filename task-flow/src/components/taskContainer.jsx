@@ -93,7 +93,7 @@ export const TaskContainer = () => {
     const newTask = {
       id: tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1,
       content: task,
-      isDone: false,
+      isDone: false,//a
     };
     const updatedTasks = [...tasks, newTask];
     setTasks(updatedTasks);
