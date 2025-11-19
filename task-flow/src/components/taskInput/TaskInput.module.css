@@ -1,0 +1,32 @@
+.element {
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 1em rgba(60, 115, 224, 0.15));
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.title {
+  margin-bottom: 10px;
+}
+
+.input {
+  background-color: #eaeaea;
+  border: 1px solid #787474;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 40px;
+  width : 100%;
+  padding: 0 20px;
+  color:  rgb(69, 63, 63);
+}
+
+.input:focus {
+  outline: none;
+  color:  rgb(69, 63, 63);
+  border-color: rgba(59, 121, 246, 0.55);
+}

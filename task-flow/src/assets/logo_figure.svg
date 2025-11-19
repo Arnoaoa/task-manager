@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logo-figure" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 381.48 393.36">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_5);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_5" data-name="Dégradé sans nom 5" x1="0" y1="196.68" x2="381.48" y2="196.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b8bf4"/>
+      <stop offset="1" stop-color="#703bf2"/>
+    </linearGradient>
+  </defs>
+  <g id="logo">
+    <path class="cls-2" d="m196.68,393.36L0,196.68,196.68,0l81.41,81.41-57.64,57.64,57.64,57.64-81.41,81.41-81.41-81.41,115.27-115.27-33.86-33.86L47.55,196.68l149.13,149.13,161.02-161.02,23.77,23.77-184.8,184.8Zm-33.86-196.68l33.86,33.86,33.86-33.86-33.86-33.86-33.86,33.86Z"/>
+  </g>
+</svg>

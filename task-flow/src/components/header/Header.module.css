@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* repartir espace entre les élem, et espace entre eux */ 
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(59, 121, 246, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(59, 121, 246, 0.35);
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.containerSmallForm {
+  display: flex;
+  justify-content: flex-start; /* pour aligner le bouton avec l'input */
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px; /* Espace entre "Optimization task manager" et le formulaire */
+}
+
+.containerSmallForm button {
+  white-space: nowrap; /* Empêche "Log in" de se couper sur deux lignes */
+  flex-shrink: 0; /* Empêche le bouton de rétrécir */
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+
+.input {
+  background-color: #eaeaea;
+  border: 1px solid #787474;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 40px;
+  width: 75px; /* Largeur réduite pour raccourcir le champ */
+  padding: 0 15px;
+  color:  rgb(69, 63, 63);
+}
+
+.input:focus {
+  outline: none;
+  color:  rgb(69, 63, 63);
+  border-color: rgba(59, 121, 246, 0.55);
+}
+
+
+
+.App-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.App-logo-figure {
+  height: 40px;
+  width: auto;
+  transform-origin: center;
+}
+
+.App-logo-text {
+  height: 40px;
+  width: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-figure {
+    animation: App-logo-spin infinite 2.3s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
