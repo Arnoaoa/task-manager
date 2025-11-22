@@ -38,15 +38,11 @@ export const TaskContainer = () => {
       username: username,
 };
     const updatedUser = [newUser];
-    
     setUser(updatedUser);
-    
     saveUserToLocalStorage(updatedUser);
 
     
     const nameKey = localStorage.getItem(username)
-    console.log(username,'username');
-    console.log(nameKey,'nameKey');
     if (nameKey) {
       const prevTasks = JSON.parse(nameKey);
       setTasks(prevTasks);}
@@ -93,7 +89,7 @@ export const TaskContainer = () => {
     const newTask = {
       id: tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1,
       content: task,
-      isDone: false,//a
+      isDone: false,
     };
     const updatedTasks = [...tasks, newTask];
     setTasks(updatedTasks);
@@ -111,14 +107,16 @@ export const TaskContainer = () => {
   const toggleTask = (id) => {
     const updatedTasks = tasks.map(task => task.id === id ? { ...task, isDone: !task.isDone } : task);
     setTasks(updatedTasks);
-    console.log(updatedTasks);
     saveTasksToLocalStorage(updatedTasks);
     saveTasksPerUser(updatedTasks);
     
   };
 
   const editTask = (id, content) => {
-    setTasks(tasks.map(task => task.id === id ? { ...task, content: content } : task));
+    const updatedTasks = tasks.map(task => task.id === id ? { ...task, content: content } : task);
+    setTasks(updatedTasks);
+    saveTasksToLocalStorage(updatedTasks);
+    saveTasksPerUser(updatedTasks);
   };
 
   const clearTasks = () => {

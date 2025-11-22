@@ -70,6 +70,27 @@
   color: #e4f0ff;
   box-shadow: 0 0 16px rgba(58, 121, 246, 0.6);
 }
+
+.editButton {
+  background-color: #0a1f44;
+  border: 2px solid #5aa0ff;
+  color: #bcd6ff;
+  box-shadow: 0 0 12px rgba(58, 121, 246, 0.45);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editButton:hover {
+  background-color: #123163;
+  color: #e4f0ff;
+  box-shadow: 0 0 16px rgba(58, 121, 246, 0.6);
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .idSuccess {
   background-color: rgba(84, 255, 14, 0.15);
   color: rgba(84, 255, 14, 0.4);
@@ -82,4 +103,49 @@
 .contentSuccess {
   text-decoration: line-through;
   color: rgba(84, 255, 14, 0.4);
+}
+
+.editInput {
+  background-color: #eaeaea;
+  border: 1px solid #5aa0ff;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 35px;
+  flex: 1;
+  padding: 0 15px;
+  color: rgb(69, 63, 63);
+  outline: none;
+}
+
+.editInput:focus {
+  border-color: rgba(59, 121, 246, 0.8);
+  box-shadow: 0 0 8px rgba(58, 121, 246, 0.4);
+}
+
+.saveButton {
+  background-color: rgba(84, 255, 14, 0.15);
+  border: 2px solid rgba(84, 255, 14, 0.4);
+  color: rgba(84, 255, 14, 0.8);
+  box-shadow: 0 0 12px rgba(84, 255, 14, 0.3);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: rgba(84, 255, 14, 0.25);
+  color: rgba(84, 255, 14, 1);
+  box-shadow: 0 0 16px rgba(84, 255, 14, 0.5);
+}
+
+.cancelButton {
+  background-color: rgba(255, 59, 48, 0.15);
+  border: 2px solid rgba(255, 59, 48, 0.4);
+  color: rgba(255, 59, 48, 0.8);
+  box-shadow: 0 0 12px rgba(255, 59, 48, 0.3);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: rgba(255, 59, 48, 0.25);
+  color: rgba(255, 59, 48, 1);
+  box-shadow: 0 0 16px rgba(255, 59, 48, 0.5);
 }
